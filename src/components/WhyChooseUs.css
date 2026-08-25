@@ -1,0 +1,414 @@
+/* =========================================
+   WHY ID TECHNOCOM
+   ID TECHNOCOM - PREMIUM DARK THEME
+========================================= */
+
+.why-section {
+  padding: 100px 0;
+  background: #17143a;
+  position: relative;
+  overflow: hidden;
+}
+
+/* =========================================
+   SOFT BACKGROUND GLOW
+========================================= */
+
+.why-section::before {
+  content: "";
+  position: absolute;
+
+  width: 420px;
+  height: 420px;
+
+  background: rgba(167, 139, 250, 0.12);
+
+  filter: blur(100px);
+  border-radius: 50%;
+
+  right: -150px;
+  top: -140px;
+
+  pointer-events: none;
+}
+
+.why-section::after {
+  content: "";
+  position: absolute;
+
+  width: 300px;
+  height: 300px;
+
+  background: rgba(56, 217, 255, 0.08);
+
+  filter: blur(100px);
+  border-radius: 50%;
+
+  left: -120px;
+  bottom: -100px;
+
+  pointer-events: none;
+}
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.why-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* =========================================
+   HEADING
+========================================= */
+
+.why-heading {
+  max-width: 760px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.why-label {
+  display: inline-block;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  letter-spacing: 1.8px;
+
+  color: #38d9ff;
+
+  margin-bottom: 14px;
+
+  text-transform: uppercase;
+}
+
+.why-heading h2 {
+  font-size: 42px;
+  line-height: 1.18;
+
+  color: #f5f3ff;
+
+  margin: 0 0 18px;
+}
+
+.why-heading p {
+  max-width: 700px;
+
+  margin: 0 auto;
+
+  font-size: 16px;
+  line-height: 1.8;
+
+  color: #c8c3dd;
+}
+
+/* =========================================
+   GRID
+========================================= */
+
+.why-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 26px;
+}
+
+/* =========================================
+   CARD
+========================================= */
+
+.why-card {
+  position: relative;
+
+  min-height: 250px;
+
+  padding: 30px;
+
+  background: #211d48;
+
+  border: 1px solid rgba(167, 139, 250, 0.16);
+
+  border-radius: 20px;
+
+  box-shadow:
+    0 12px 35px rgba(0, 0, 0, 0.2);
+
+  overflow: hidden;
+
+  transition:
+    transform 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+/* =========================================
+   CARD TOP GLOW LINE
+========================================= */
+
+.why-card::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 0;
+  height: 3px;
+
+  background: linear-gradient(
+    90deg,
+    #a78bfa,
+    #38d9ff
+  );
+
+  transition: width 0.35s ease;
+}
+
+/* =========================================
+   CARD HOVER
+========================================= */
+
+.why-card:hover {
+  transform: translateY(-8px);
+
+  border-color: rgba(56, 217, 255, 0.45);
+
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.3),
+    0 0 25px rgba(56, 217, 255, 0.08);
+}
+
+.why-card:hover::before {
+  width: 100%;
+}
+
+/* =========================================
+   CARD TOP
+========================================= */
+
+.why-card-top {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 25px;
+}
+
+/* =========================================
+   NUMBER
+========================================= */
+
+.why-number {
+  font-size: 14px;
+  font-weight: 800;
+
+  letter-spacing: 1px;
+
+  color: rgba(167, 139, 250, 0.55);
+}
+
+/* =========================================
+   ICON
+========================================= */
+
+.why-icon {
+  width: 44px;
+  height: 44px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+
+  background: rgba(167, 139, 250, 0.12);
+
+  border: 1px solid rgba(167, 139, 250, 0.18);
+
+  color: #a78bfa;
+
+  font-size: 19px;
+  font-weight: 800;
+
+  transition:
+    background 0.35s ease,
+    color 0.35s ease,
+    transform 0.35s ease,
+    border-color 0.35s ease;
+}
+
+/* =========================================
+   ICON HOVER
+========================================= */
+
+.why-card:hover .why-icon {
+  background: #a78bfa;
+
+  color: #17143a;
+
+  border-color: #a78bfa;
+
+  transform: rotate(5deg) scale(1.05);
+}
+
+/* =========================================
+   TITLE
+========================================= */
+
+.why-card h3 {
+  font-size: 21px;
+  line-height: 1.35;
+
+  color: #f5f3ff;
+
+  margin: 0 0 12px;
+}
+
+/* =========================================
+   TEXT
+========================================= */
+
+.why-card p {
+  font-size: 15px;
+  line-height: 1.75;
+
+  color: #c8c3dd;
+
+  margin: 0;
+}
+
+/* =========================================
+   SMALL ACCENT LINE
+========================================= */
+
+.why-card h3::after {
+  content: "";
+
+  display: block;
+
+  width: 28px;
+  height: 2px;
+
+  margin-top: 10px;
+
+  background: #38d9ff;
+
+  opacity: 0;
+
+  transform: scaleX(0);
+
+  transform-origin: left;
+
+  transition:
+    opacity 0.35s ease,
+    transform 0.35s ease;
+}
+
+/* =========================================
+   TITLE HOVER
+========================================= */
+
+.why-card:hover h3::after {
+  opacity: 1;
+
+  transform: scaleX(1);
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+  .why-section {
+    padding: 80px 0;
+  }
+
+  .why-grid {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 22px;
+  }
+
+  .why-heading h2 {
+    font-size: 36px;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+  .why-section {
+    padding: 70px 0;
+  }
+
+  .why-heading {
+    margin-bottom: 38px;
+  }
+
+  .why-label {
+    font-size: 12px;
+  }
+
+  .why-heading h2 {
+    font-size: 30px;
+  }
+
+  .why-heading p {
+    font-size: 15px;
+
+    line-height: 1.7;
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+  }
+
+  .why-card {
+    padding: 25px;
+
+    min-height: auto;
+
+    border-radius: 17px;
+  }
+
+  .why-card-top {
+    margin-bottom: 20px;
+  }
+
+  .why-card h3 {
+    font-size: 20px;
+  }
+
+  .why-card p {
+    font-size: 14px;
+  }
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 400px) {
+  .why-section {
+    padding: 60px 0;
+  }
+
+  .why-card {
+    padding: 22px;
+  }
+
+  .why-icon {
+    width: 40px;
+    height: 40px;
+  }
+} 

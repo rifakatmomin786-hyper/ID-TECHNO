@@ -1,0 +1,9 @@
+/* ID TECHNOCOM
+   App-level styles
+   Main website styles are in index.css
+*/
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}

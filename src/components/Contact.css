@@ -1,0 +1,600 @@
+/* =========================================
+   CONTACT SECTION
+========================================= */
+
+.contact-section {
+  padding: 100px 0;
+  background: #f4f8fc;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-section::before {
+  content: "";
+  position: absolute;
+
+  width: 380px;
+  height: 380px;
+
+  background: rgba(0, 111, 230, 0.08);
+
+  filter: blur(90px);
+
+  border-radius: 50%;
+
+  left: -160px;
+  bottom: -160px;
+}
+
+.contact-section::after {
+  content: "";
+
+  position: absolute;
+
+  width: 300px;
+  height: 300px;
+
+  background: rgba(0, 168, 255, 0.06);
+
+  filter: blur(80px);
+
+  border-radius: 50%;
+
+  right: -120px;
+  top: -100px;
+}
+
+.contact-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.contact-heading {
+  max-width: 760px;
+
+  margin: 0 auto 55px;
+
+  text-align: center;
+}
+
+.contact-label {
+  display: inline-block;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+
+  color: #006FE6;
+
+  margin-bottom: 14px;
+
+  text-transform: uppercase;
+}
+
+.contact-heading h2 {
+  font-size: 42px;
+
+  line-height: 1.18;
+
+  color: #06152F;
+
+  margin: 0 0 18px;
+}
+
+.contact-heading p {
+  font-size: 16px;
+
+  line-height: 1.8;
+
+  color: #5f6f82;
+
+  max-width: 700px;
+
+  margin: 0 auto;
+}
+
+
+/* =========================================
+   CONTACT WRAPPER
+========================================= */
+
+.contact-wrapper {
+  display: grid;
+
+  grid-template-columns: 0.85fr 1.15fr;
+
+  gap: 35px;
+
+  align-items: stretch;
+}
+
+
+/* =========================================
+   LEFT CONTACT INFO
+========================================= */
+
+.contact-info {
+  background: #06152F;
+
+  border-radius: 22px;
+
+  padding: 40px;
+
+  color: #ffffff;
+
+  box-shadow: 0 20px 45px rgba(6, 21, 47, 0.14);
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+.contact-info::before {
+  content: "";
+
+  position: absolute;
+
+  width: 220px;
+  height: 220px;
+
+  background: rgba(0, 168, 255, 0.12);
+
+  border-radius: 50%;
+
+  filter: blur(50px);
+
+  right: -90px;
+  top: -80px;
+}
+
+.contact-info h3 {
+  position: relative;
+
+  font-size: 28px;
+
+  color: #ffffff;
+
+  margin: 0 0 14px;
+}
+
+.contact-info > p {
+  position: relative;
+
+  font-size: 15px;
+
+  line-height: 1.8;
+
+  color: #c7d4e3;
+
+  margin: 0 0 32px;
+}
+
+
+/* =========================================
+   CONTACT ITEMS
+========================================= */
+
+.contact-item {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  text-decoration: none;
+
+  color: inherit;
+
+  margin-bottom: 22px;
+
+  position: relative;
+
+  transition: 0.3s ease;
+}
+
+.contact-item:hover {
+  transform: translateX(5px);
+}
+
+.contact-icon {
+  flex: 0 0 46px;
+
+  width: 46px;
+  height: 46px;
+
+  border-radius: 13px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(0, 168, 255, 0.12);
+
+  border: 1px solid rgba(0, 168, 255, 0.2);
+
+  color: #00A8FF;
+
+  font-size: 20px;
+}
+
+.contact-item span {
+  display: block;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  letter-spacing: 0.5px;
+
+  color: #8fa5bc;
+
+  margin-bottom: 4px;
+}
+
+.contact-item strong {
+  display: block;
+
+  font-size: 15px;
+
+  line-height: 1.5;
+
+  color: #ffffff;
+
+  font-weight: 600;
+}
+
+
+/* =========================================
+   WHATSAPP BUTTON
+========================================= */
+
+.contact-whatsapp {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 10px;
+
+  width: 100%;
+
+  margin-top: 10px;
+
+  padding: 15px 20px;
+
+  border-radius: 12px;
+
+  background: #00A8FF;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  transition: 0.3s ease;
+}
+
+.contact-whatsapp:hover {
+  background: #006FE6;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 10px 25px rgba(0, 168, 255, 0.25);
+}
+
+.whatsapp-icon {
+  font-size: 18px;
+}
+
+
+/* =========================================
+   FORM CARD
+========================================= */
+
+.contact-form-card {
+  background: #ffffff;
+
+  border: 1px solid #e6edf5;
+
+  border-radius: 22px;
+
+  padding: 40px;
+
+  box-shadow: 0 10px 35px rgba(6, 21, 47, 0.07);
+}
+
+.contact-form-card h3 {
+  font-size: 28px;
+
+  color: #06152F;
+
+  margin: 0 0 8px;
+}
+
+.contact-form-card > p {
+  font-size: 15px;
+
+  color: #65758a;
+
+  margin: 0 0 28px;
+}
+
+
+/* =========================================
+   FORM ROW
+========================================= */
+
+.form-row {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 18px;
+}
+
+
+/* =========================================
+   FORM GROUP
+========================================= */
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  color: #06152F;
+
+  margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  border: 1px solid #dce5ef;
+
+  border-radius: 11px;
+
+  background: #ffffff;
+
+  color: #06152F;
+
+  font-family: inherit;
+
+  font-size: 14px;
+
+  outline: none;
+
+  transition: 0.3s ease;
+}
+
+.form-group input,
+.form-group select {
+  height: 50px;
+
+  padding: 0 15px;
+}
+
+.form-group textarea {
+  padding: 14px 15px;
+
+  resize: vertical;
+
+  min-height: 125px;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #9aa8b8;
+}
+
+
+/* =========================================
+   FORM FOCUS
+========================================= */
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #006FE6;
+
+  box-shadow: 0 0 0 3px rgba(0, 111, 230, 0.08);
+}
+
+
+/* =========================================
+   SUBMIT BUTTON
+========================================= */
+
+.contact-submit {
+  width: 100%;
+
+  border: none;
+
+  border-radius: 12px;
+
+  padding: 16px 22px;
+
+  background: #006FE6;
+
+  color: #ffffff;
+
+  font-family: inherit;
+
+  font-size: 15px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 10px;
+
+  transition: 0.3s ease;
+}
+
+.contact-submit span {
+  font-size: 20px;
+
+  transition: 0.3s ease;
+}
+
+.contact-submit:hover {
+  background: #004fa3;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 12px 28px rgba(0, 111, 230, 0.2);
+}
+
+.contact-submit:hover span {
+  transform: translateX(5px);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 950px) {
+
+  .contact-section {
+    padding: 80px 0;
+  }
+
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+
+    gap: 25px;
+  }
+
+  .contact-info {
+    padding: 35px;
+  }
+
+  .contact-form-card {
+    padding: 35px;
+  }
+
+  .contact-heading h2 {
+    font-size: 36px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+
+  .contact-section {
+    padding: 70px 0;
+  }
+
+  .contact-heading {
+    margin-bottom: 38px;
+  }
+
+  .contact-label {
+    font-size: 12px;
+  }
+
+  .contact-heading h2 {
+    font-size: 30px;
+  }
+
+  .contact-heading p {
+    font-size: 15px;
+
+    line-height: 1.7;
+  }
+
+  .contact-info {
+    padding: 28px;
+
+    border-radius: 18px;
+  }
+
+  .contact-info h3 {
+    font-size: 24px;
+  }
+
+  .contact-form-card {
+    padding: 28px;
+
+    border-radius: 18px;
+  }
+
+  .contact-form-card h3 {
+    font-size: 24px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+
+    gap: 0;
+  }
+
+  .contact-item {
+    gap: 12px;
+  }
+
+  .contact-icon {
+    flex-basis: 42px;
+
+    width: 42px;
+    height: 42px;
+  }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 400px) {
+
+  .contact-info,
+  .contact-form-card {
+    padding: 22px;
+  }
+
+  .contact-item strong {
+    font-size: 14px;
+  }
+
+  .contact-submit {
+    font-size: 14px;
+
+    padding: 15px;
+  }
+
+}
